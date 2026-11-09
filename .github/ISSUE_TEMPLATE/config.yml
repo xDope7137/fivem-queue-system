@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup help and questions
+    url: https://discord.bhavikp.in
+    about: Ask on Discord for install help, config questions and anything that isn't a bug.
+  - name: Documentation
+    url: https://docs.bhavikp.in/scripts/bp-queue/
+    about: Install steps, every setting, exports and common fixes.

@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in bp_queue doesn't work the way the docs say it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Never paste your Discord bot token, Tebex secret or bridge tokens here. This tracker is public.
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options: [Pro, Free]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: bp_queue version
+      description: The version line printed when bp_queue starts.
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Server artifact and framework
+      placeholder: "artifact 17000, Qbox"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Turn on the Discord whitelist
+        2. Join without the role
+        3. ...
+  - type: textarea
+    id: console
+    attributes:
+      label: Server console output
+      description: The bp_queue lines from startup and from when it happened.
+      render: text
